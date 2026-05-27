@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "/api",
+  baseURL: "https://food-delivery-app-vs2w.onrender.com/api"
   withCredentials: true,
 });
 
