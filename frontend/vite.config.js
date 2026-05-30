@@ -7,7 +7,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'https://food-delivery-app-vs2w.onrender.com',
+        target: 'https://food-delivery-app-ys2w.onrender.com',
         changeOrigin: true,
       }
     }

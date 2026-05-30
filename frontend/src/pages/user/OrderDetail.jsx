@@ -21,7 +21,7 @@ export default function OrderDetail() {
     api.get(`/orders/${id}`).then((res) => setOrder(res.data));
 
     // Real-time status updates via socket
-    const socket = io(import.meta.env.VITE_SOCKET_URL || "https://food-delivery-app-vs2w.onrender.com");
+    const socket = io(import.meta.env.VITE_SOCKET_URL || "https://food-delivery-app-ys2w.onrender.com");
     socket.emit("join-user", user._id);
     socket.on("order-status-update", ({ orderId, status }) => {
       if (orderId === id) {
